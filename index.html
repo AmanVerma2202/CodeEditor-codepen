@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codepen</title>
+    <link rel="stylesheet" href="codepen.css" />
+    <script
+      src="https://kit.fontawesome.com/30228cd23e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="" />
+      </div>
+      <div class="name">CodePen</div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="box">
+          <label class="html">HTML<i class="fa-brands fa-html5"></i></label>
+          <textarea id="html-code" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="box">
+          <label class="css">CSS<i class="fa-brands fa-css3-alt"></i></label>
+          <textarea id="css-code" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="box">
+          <label class="js">JS<i class="fa-brands fa-js"></i></label>
+          <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+      </div>
+      <div class="right">
+        <label>Output<i class="fa-solid fa-play"></i></label>
+        <iframe id="output"></iframe>
+      </div>
+    </div>
+
+    <script src="codepen.js"></script>
+  </body>
+</html>
